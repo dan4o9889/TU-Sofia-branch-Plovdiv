@@ -1,6 +1,0 @@
-/Users/danielivanov/Projects/pp_lu3/pp_lu3/bin/Debug/pp_lu3.exe
-/Users/danielivanov/Projects/pp_lu3/pp_lu3/bin/Debug/pp_lu3.pdb
-/Users/danielivanov/Projects/pp_lu3/pp_lu3/obj/Debug/pp_lu3.csprojAssemblyReference.cache
-/Users/danielivanov/Projects/pp_lu3/pp_lu3/obj/Debug/pp_lu3.csproj.CoreCompileInputs.cache
-/Users/danielivanov/Projects/pp_lu3/pp_lu3/obj/Debug/pp_lu3.exe
-/Users/danielivanov/Projects/pp_lu3/pp_lu3/obj/Debug/pp_lu3.pdb
