@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading;
@@ -21,7 +21,7 @@ namespace pp_lu3
             //Running method without Tasks
             var sw = new Stopwatch();
             sw.Start();
-            ArrayFunc(array,0,size);
+            ArrayFunc(array, 0, size);
             sw.Stop();
             Console.WriteLine($"Time elapsed without Tasks - {sw.Elapsed}");
 
@@ -45,18 +45,18 @@ namespace pp_lu3
             //Main body of the method where we assign the Tasks
             var sw = new Stopwatch();
             sw.Start();
-          for (int task = 0; task < taskArray.GetLength(0); task++)
-          {
+            for (int task = 0; task < taskArray.GetLength(0); task++)
+            {
 
                 var currentHigh = currentLow + subRange;
                 if (task == taskArray.GetLength(0) - 1) currentHigh = high;
 
-                taskArray[task] = Task.Factory.StartNew(() => ArrayFunc(array,currentLow,currentHigh));
+                taskArray[task] = Task.Factory.StartNew(() => ArrayFunc(array, currentLow, currentHigh));
 
                 Console.WriteLine($"{currentLow} - {currentHigh}");
 
                 currentLow += subRange;
-          }
+            }
             Task.WaitAll(taskArray);
             sw.Stop();
 
@@ -72,7 +72,7 @@ namespace pp_lu3
             }
         }
 
-        private static void ArrayFunc(double []array, int start, int stop)
+        private static void ArrayFunc(double[] array, int start, int stop)
         {
             for (int index = start; index < stop; index++)
             {
